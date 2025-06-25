@@ -1,0 +1,479 @@
+
+
+div#cs_table {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+div#cs_table {
+    display: table;
+    margin: 1em auto 1em auto;
+}
+
+div {
+    display: block;
+}
+div #calculatorWrap {
+    background: #ffffff;
+    padding: 0;
+    border: 0px solid #9d8d52;
+    border-radius: 0;
+    font-size: 100%;
+   
+}
+div #calculatorWrap {
+    background: #773d3d;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border: 1px solid #802626;
+    border-radius: 4px;
+    font-size: 100%;
+    height: 400vh;
+    width: 400vw;
+}
+body {
+    color: #f9f6f6;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+    margin: 0 0 60px 0;
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+div #row {
+    display: table-row;
+}
+div #cell {
+    display: table-cell;
+    text-align: center;
+}
+ 
+div #cs_calculatorWrap {
+    box-shadow: 0 0 3px 3px #e9e9e9;
+    
+}
+div #cs_calculatorWrap {
+    font-family: Arial, Helvetica, sans-serif;
+    display: table-cell;
+    background-color: #5b1739;
+    padding: 4px 8px 8px 8px;
+    border: 1px solid #56b3bf;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+
+/* begin cs_ Calculator CSS */
+/* to use this calculator on your own website please use the calculator on my home page at https://www.calculatorsoup.com/ */
+/* read the page source cade for directions */
+/*
+copyright notice:
+copyright CalculatorSoup LLC at calculatorsoup.com
+You are welcome to use this 10 digit calculator for your own website under the following conditions
+Do not remove the calculator html containing the CalculatorSoup name, logo, and link to calculatorsoup.com
+You keep the calculator html as close to the original as possible
+If you need any help getting it working or making changes let me know at "ed at calculatorsoup dot com" and I'll be happy to help
+*/
+
+div #cs_table {
+display: table;
+margin: 1em auto 1em auto;
+}
+
+div #row {
+display: table-row;
+}
+
+div #cell {
+display: table-cell;
+text-align: center;
+}
+
+table.cs_calculator_container {
+margin: auto;
+border-collapse: collapse;
+}
+
+table.cs_calculator_container td {
+width: 25%;
+padding: 2px;
+}
+
+div #cs_calculatorWrap {
+font-family: Arial, Helvetica, sans-serif;
+display: table-cell;
+/* for colors see for example https://www.htmlcsscolor.com/ */
+/* background-color: #90EE90; /* green */
+/* background-color: #EECDCB; /* red #F4DDDD*/
+/* background-color: #fff1f1; /* red */
+background-color: #fffacde8; /* dark */
+padding: 4px 8px 8px 8px;
+border: 1px solid #999999; /* dark */
+border-radius: 10px;
+text-align: center;
+margin: auto;
+
+/*
+disable text select inside calculator
+https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting
+*/
+-webkit-touch-callout: none; /* iOS Safari */
+-webkit-user-select: none; /* Safari */
+-moz-user-select: none; /* Old versions of Firefox */
+-ms-user-select: none; /* Internet Explorer/Edge */
+user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+button.cs_button:focus, input.cs_window:focus {
+outline: none;
+}
+
+input.cs_window {
+width: 250px;
+height: 40px;
+border: 1px solid #999999;
+font-size: 1.5em;
+margin: 10px 0 10px 0;
+color: #000000;
+background-color: #f7f0f0;
+text-align: right;
+}
+
+input.cs_window:focus {
+/* outline: none; */
+outline: 1px solid #666;
+}
+
+div #cs_table {
+
+/*
+disable text select inside calculator
+https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting
+*/
+-webkit-touch-callout: none; /* iOS Safari */
+-webkit-user-select: none; /* Safari */
+-moz-user-select: none; /* Old versions of Firefox */
+-ms-user-select: none; /* Internet Explorer/Edge */
+user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+button.cs_button {
+
+box-sizing: border-box;
+
+/* width: 2.85em; /* 2.85em x 16 px/em = 45.6 */
+/* line-height: 2.196em; /* 2.196em x 16 px/em = 35.136 */
+width: 100%;
+height: 55px;
+
+text-align: center;
+color: #444444;
+background-color: #ffffff;
+border: 1px solid #CCCCCC;
+
+
+/* causes weird optical disturbance at dark button corners */
+border-radius: 8px;
+
+
+/* color: #008000; green */
+/* color: #bd362f; /* red */
+/* border: 1px solid #008000; green */
+/* border: 1px solid #bd362f; /* red */
+
+font-size: 1.5em;
+margin-top: 0px;
+padding: 0px;
+vertical-align: middle;
+
+/* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+
+
+/*
+disable text select inside calculator
+https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting
+*/
+-webkit-touch-callout: none !important; /* iOS Safari */
+-webkit-user-select: none !important; /* Safari */
+-moz-user-select: none !important; /* Old versions of Firefox */
+-ms-user-select: none !important; /* Internet Explorer/Edge */
+user-select: none !important; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+
+/* stop browser blue highlight https://stackoverflow.com/questions/21003535/anyway-to-prevent-the-blue-highlighting-of-elements-in-chrome-when-clicking-quic */
+-webkit-tap-highlight-color: transparent;
+}
+
+button.cs_memory {
+width: 100%;
+height: 40px;
+font-size: 1.25em;
+}
+
+.cs_number {
+background-color: #1c63a9;
+color: #fefefe;
+font-weight: bold;
+/* background-color: #008000; green */
+/* background-color: #bd362f; /* red */
+/*background-color: #f4f4f4; /* dark */
+/*color: #333333; /* dark */
+}
+
+.cs_operator, button.cs_execute {
+/* background-color: #F1C9C7; */
+/*background-color: #cdcdcd; /* dark */
+/* color: #008000; green */
+/* color: #bd362f; /* red */
+/* FFCC00 original */
+color: #333333; /* dark */
+font-weight: bold;
+}
+
+.cs_button:active {
+background-color: #EEEEEE; /*cursor:pointer;*/
+}
+
+.cs_operator:active,.cs_operator:focus,.cs_operator:hover,
+button.cs_execute:active {
+background-color: #1b1b1b; /* dark */
+color: #f6f4f4; /* dark */
+border: 1px solid #333333;
+}
+
+@media only screen and (min-width: 769px) {
+/* this will stick on Safari on iPhone
+todo is this statement true????
+ */
+.execute:hover {
+    background-color: #EDCAC9; /* dark */
+    color: #333333; /* dark */
+}
+}
+
+/* below 768 likely touch screen - increase the calculator size */
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+.cs_button {
+
+    /* width: 2.85em; /* 2.85em x 16 px/em = 45.6 */
+    /* line-height: 2.196em; /* 2.196em x 16 px/em = 35.136 */
+    font-size: 1.75em;
+}
+
+.cs_memory {
+    width: 75px;
+    height: 55px;
+    font-size: 1.5em;
+}
+
+.cs_window {
+    width: 295px;
+    height: 52px;
+    font-size: 2em;
+}
+
+}
+
+/* below 768 likely touch screen - increase the calculator size */
+@media only screen and (max-width: 359px) {
+#cs_calculatorWrap {
+    padding: 4px 8px 8px 8px;
+}
+
+.cs_button {
+
+    /* width: 2.85em; /* 2.85em x 16 px/em = 45.6 */
+    /* line-height: 2.196em; /* 2.196em x 16 px/em = 35.136 */
+    font-size: 1.5em;
+}
+
+.cs_memory {
+    width: 69px;
+    height: 48px;
+    font-size: 1.7em;
+}
+
+.cs_window {
+    width: 250px;
+    height: 40px;
+    font-size: 2em;
+}
+
+}
+
+p {
+margin: 1em;
+}
+
+.hidden {
+position: absolute;
+left: -10000px;
+top: auto;
+width: 1px;
+height: 1px;
+overflow: hidden;
+}
+
+.displayNone {
+display: none;
+}
+
+/* from Calculator Soup */
+
+.alignRight {
+text-align: right;
+}
+
+#cs_titleSmall {
+margin: 12px 4px 0px 4px;
+font-size: 70%;
+}
+
+#cs_titleSmall a {
+text-decoration: none;
+}
+
+#cs_titleSmall span.cs_calculator_title {
+font-family: 'Courier New', Courier, monospace;
+font-size: 1.2em;
+color: #f9f5f5;
+background-color: inherit;
+font-weight: bold;
+}
+
+#cs_titleSmall span.cs_soup_title {
+font-family: Verdana, Arial, sans-serif;
+font-size: 1.1em;
+color: #bd362f;
+background-color: inherit;
+font-weight: bold;
+margin-left: -3px;
+}
+
+.cs_button {
+touch-action: manipulation;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+#cs_calculatorWrap {
+    box-shadow: 0 0 3px 3px #05d6dda6;
+}
+}
+
+.cs_info {
+margin: 2em;
+}
+
+.cs_chr {
+margin: 2px;
+padding: 2px 4px 2px 4px;
+border: 1px solid rgb(7, 14, 239);
+}
+
+.operations {
+margin: auto;
+border-collapse: collapse;
+}
+
+.operations td {
+padding: 8px;
+border: 1px solid rgb(123, 53, 53);
+vertical-align: top;
+}
+
+.operations tr.section {
+background-color: #0eb8eb;
+color: #f30aef;
+}
+
+.cs_oper_table {
+margin: 2px;
+overflow-x: auto;
+}
+
+/* end cs_ Calculator CSS */
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
